@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400&display=swap');
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta';
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container-form {
+    padding: 50px;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(to right, var(--gradiente-e-pl-fundo), var(--gradiente-d-pl-fundo)), url(img/fundo.jpg);
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 0 30px var(--sombra-borda);
+}
+
+.container-form .cabecalho {
+    margin-bottom: 50px;
+}
+
+.container-form .cabecalho a {
+    color: var( --cor-donte-cabecalho);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+.container-form .cabecalho .selecao {
+    border-bottom: 2px solid var();
+}
+
+.container-form .campos {
+    margin-bottom: 20px;
+}
+
+.container-form .campos label {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--cor-da-fonte-inf);
+    text-transform: uppercase;
+    margin: 7px 0;
+    padding: 0 5px;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.container-form .campos input {
+    color: var(--fonte-preenchimento-texto);
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: var(--preenchimento-do-campo);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.container-form .campos:focus-within label {
+    background-color: var(--preenchimento-caixa-de-mgm);
+    color: var(fonte-texto-caixa-de-mgm);
+}
+
+.container-form .campos .check {
+    display: inline-block;
+    width: auto;
+}
+
+.container-form span {
+    color: var(--cor-da-fonte-inf);
+}
+
+.container-form .btn {
+    width: 100%;
+    background-color: var(--preenchimento-botao);
+    color: var(--fonte-texto-botao);
+    border: none;
+    border-radius: 30px;
+    padding: 7px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+hr {
+    margin-bottom: 30px;
+}
+
+.lembrete {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: var(--cor-da-fonte-inf);
+}
